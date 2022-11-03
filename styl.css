@@ -1,11 +1,12 @@
 style{
     text-decoration: none;
-    color:blue;
+    color:aqua;
     transition: 1s;
 }
-a: :hover{
-    color: darkblue;
+a:hover {
+    color:orange;
 }
+
 .active{
     color:blue;
 }
