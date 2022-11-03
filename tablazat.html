@@ -4,22 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Órarend</title>
+    <title>Ürlap</title>
     <link rel="stylesheet" href="styl.css">
-
-    <style>
-        td,
-        th {
-            border: 1px solid green;
-            width: 100px;
-        }
-
-        table {
-            text-align: center;
-            border: 2px solid black;
-            border-collapse: collapse;
-        }
-    </style>
 </head>
 <body>
 
@@ -27,101 +13,48 @@
         <a href="https://kovacskonstantin.github.io/web/">Főoldal</a>
         <a href="https://kovacskonstantin.github.io/web/keplink.html">Képlink</a>
         <a href="https://kovacskonstantin.github.io/web/lista.html">Listák</a>
-        <a class="active" href="https://kovacskonstantin.github.io/web/tablazat.html">Órarend</a>
-        <a href="https://kovacskonstantin.github.io/web/urlap.html">Ürlap</a>
+        <a href="https://kovacskonstantin.github.io/web/tablazat.html">Órarend</a>
+        <a class="active" href="https://kovacskonstantin.github.io/web/urlap.html">Ürlap</a>
     </div>
 
+
+
+ <form name="rendeles">
+    <h1 style="color:gold">Hamburger rendelés</h1>
+    <fieldset>
+        <legend>A rendelő adatai:</legend>
+        <p><label>Név: <input type="text" name="nev">
+        <small>Vezetéknév,Keresztnév</small></label></p>
+        <p><label>Telefon: <input type="tel" name="telefon" size="15"></label></p>
+    </fieldset>
+    <fieldset>
+        <legend>Hamburgerek mérete:</legend>
+        <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
+        <p><label><input type="radio" name="meret" value="közepes">közepes</label></p>
+        <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
+    </fieldset>
+    <fieldset>
+        <legend>Feltétek:</legend>
+        <p><label><input type="checkbox" name="feltet1" value="bacon">bacon</label></p>
+        <p><label><input type="checkbox" name="feltet2" value="salata">saláta</label></p>
+        <p><label><input type="checkbox" name="feltet3" value="hagyma">hagyma</label></p>
+        <p><label><input type="checkbox" name="feltet4" value="majonez">majonéz</label></p>
+        <p><label><input type="checkbox" name="feltet5" value="ketchup">ketchup</label></p>
+        <p><label><input type="checkbox" name="feltet6" value="mustár">mustár</label></p>
+        <p><label><input type="checkbox" name="feltet7" value="sajt">sajt</label></p>
+    </fieldset>
+    <fieldset>
+        <legend>Végül:</legend>
+        <p><label>Mennyiség: <input type="number" name="mennyiseg">db</label></p>
+        <p><label>Egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
+        <p><label>Kívánt szállítási idő: <input type="time" name="kiszallitas"></label></p>
+        <br>
+        <input type="reset" name="visszaallitas">
+        <input type="submit" name="kuldes">
+    </fieldset>
     
-    <table>
-       <caption style="color:gold">9.A Órarend</caption>
+ </form>
+    
 
-    <table>
-        <tr>
-            <th>Óra</th>
-            <th>Hétfő</th>
-            <th>Kedd</th>
-            <th>Szerda</th>
-            <th>Csürtök</th>
-            <th>Péntek</th>
-        </tr>
-        <tr>
-            <td>0.óra (7.15-8.00)</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Informatika és távközlés</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>1.óra (8.00-8.45)</td>
-            <td>Magyar nyelv és irodalom</td>
-            <td>Matematika(komp)</td>
-            <td>Magyar nyelv és irodalom</td>
-            <td>Informatika és távközlés</td>
-            <td>Magyar nyelv és irodalom</td>
-        </tr>
-        <tr>
-            <td>2.óra (8.55-9.40)</td>
-            <td>Angol nyelv</td>
-            <td>Magyar nyelv és irodalom</td>
-            <td>Magyar nyelv és irodalom</td>
-            <td>Informatika és távközlés</td>
-            <td>Digitális kultúra</td>
-        </tr>
-        <tr>
-            <td>3.óra (9.50-10.35)</td>
-            <td>Munkavállalói ismeretek</td>
-            <td>Matematika</td>
-            <td>Komplex természettudomány</td>
-            <td>Angol nyelv</td>
-            <td>Digitális kultúra</td>
-        </tr>
-        <tr>
-            <td>4.óra (10.45-11-30)</td>
-            <td>Osztályfőnöki</td>
-            <td>Történelem</td>
-            <td>Angol nyelv</td>
-            <td>Matematika</td>
-            <td>Testnevelés</td>
-        </tr>
-        <tr>
-            <td>5.óra (11.40-12.25)</td>
-            <td>Történelem</td>
-            <td>Komplex természettudomány</td>
-            <td>IKT projektmunka</td>
-            <td>Történelem</td>
-            <td>Programozási alapok</td>
-        </tr>
-        <tr>
-            <td>6.óra (12.45-13.30)</td>
-            <td>Matematika</td>
-            <td>Testnevelés</td>
-            <td>Matematika</td>
-            <td>Komplex természettudomány</td>
-            <td>Programozási alapok</td>
-        </tr>
-        <tr>
-            <td>7.óra (13.35-14.20)</td>
-            <td></td>
-            <td>Angol nyelv</td>
-            <td>Testnevelés</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>8.óra (14.25-15.10)</td>
-            <td></td>
-            <td></td>
-            <td>Testnevelés</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-
-
-
-
-
-    </table>
 </body>
 </html>
