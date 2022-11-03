@@ -1,0 +1,12 @@
+style{
+    text-decoration: none;
+    color: darkgreen;
+transition: 1s;
+}
+a: :hover{
+    color: darkblue;
+}
+.active{
+background-color: cyan;
+color: coral;
+}
