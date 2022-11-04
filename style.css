@@ -6,11 +6,6 @@ body {
    color: gold;
  }
  
- p {
-   font-family: verdana;
-   font-size: 20px;
- }
-
  a:hover {
    color: coral;
  }
