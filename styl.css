@@ -1,15 +1,15 @@
-style{
+body {
+    background-color: darkcyan;
+  }
+  style{
     text-decoration: none;
     color:aqua;
     transition: 1s;
-}
-a:hover {
+ }
+ a:hover {
     color:orange;
-}
+  }
 
-.active{
+ .active{
     color:blue;
-}
-body{
-    background-color: green;
-}
+ }
