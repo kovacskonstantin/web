@@ -36,3 +36,6 @@ body {
 div.nav li a:hover:not(.active) {
   background-color:black;
 }
+div.nav li {
+  float: left;
+}
