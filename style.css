@@ -12,7 +12,7 @@ body {
  }
  
  .active {
-    background-color: darkred;
+    background-color:gold;
  }
 
  legend {
@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: chartreuse;
+  background-color:mediumslateblue;
 
  }
  div.nav li a {
@@ -34,7 +34,7 @@ body {
   text-decoration: none;
 }
 div.nav li a:hover:not(.active) {
-  background-color:black;
+  background-color:gray;
 }
 div.nav li {
   float: left;
