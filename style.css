@@ -12,7 +12,7 @@ body {
  }
  
  .active {
-   color:darkred;
+    background-color: darkred;
  }
 
  legend {
