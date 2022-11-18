@@ -40,10 +40,11 @@ div.nav li {
   float: left;
 }
 div.evszakok:hover{
+  transform: scale(1.19);
   transition: 1s;
 }
 div.evszakok{
-  transform: scale(1.19);
+  transition: 1s;
   margin-left: 170px;
   padding: 1px 16px;
   height: 900px;
