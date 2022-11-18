@@ -15,6 +15,6 @@ p{
     font-size: larger;
     text-align: center;
 }
-img:hover + p{
+img,p:hover{
     font-size: xx-large;
 }
