@@ -1,9 +1,15 @@
+.evszak{
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+}
 .box1{
    transition: 1s;
    border-radius: 10%;
    width: 200px;
    height: 20px;
    float: left;
+   border: 5px solid brown;
 }
 .box1:hover{
     transition: 1s;
@@ -14,6 +20,7 @@
     width: 200px;
     height: 20px;
     float: left;
+    border: 5px solid brown;
 }
 .box2:hover{
     transition: 1s;
@@ -24,6 +31,7 @@
     width: 200px;
     height: 20px;
     float: left;
+    border: 5px solid brown;
 }
 .box3:hover{
     transition: 1s;
@@ -34,6 +42,7 @@
     width: 200px;
     height: 20px;
     float: left;
+    border: 5px solid brown;
 }
 .box4:hover{
     transition: 1s;
