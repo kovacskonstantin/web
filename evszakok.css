@@ -3,47 +3,20 @@
     margin-right: auto;
     width:fit-content;
 }
-.box1{
-   transition: 1s;
-   border-radius: 10%;
-   width: 200px;
-   height: 20px;
-   float: left;
-   border: 5px solid brown;
-}
-.box1:hover{
-    transition: 1s;
-}
-.box2{
-    transition: 1s;
-    border-radius: 10%;
-    width: 200px;
-    height: 20px;
+.kepek{
     float: left;
+}
+img{
     border: 5px solid brown;
-}
-.box2:hover{
-    transition: 1s;
-}
-.box3{
-    transition: 1s;
     border-radius: 10%;
-    width: 200px;
-    height: 20px;
-    float: left;
-    border: 5px solid brown;
-}
-.box3:hover{
+    width: 300px;
+    margin: 30px;
     transition: 1s;
 }
-.box4{
-    transition: 1s;
-    border-radius: 10%;
-    width: 200px;
-    height: 20px;
-    float: left;
-    border: 5px solid brown;
+img:hover{
+    transform: scale(1.4);
 }
-.box4:hover{
+p{
+    text-align: center;
     transition: 1s;
 }
