@@ -1,20 +1,40 @@
-.evszakok{
-    float: left;
+.box1{
+   transition: 1s;
+   border-radius: 10%;
+   width: 200px;
+   height: 20px;
+   float: left;
 }
-img{
-    border:solid black;
+.box1:hover{
+    transition: 1s;
+}
+.box2{
+    transition: 1s;
     border-radius: 10%;
     width: 200px;
-    margin: 20px;
+    height: 20px;
+    float: left;
 }
-img:hover{
-    transform: scale(1.5);
-}
-p{
+.box2:hover{
     transition: 1s;
-    font-size: larger;
-    text-align: center;
 }
-img,p:hover{
-    font-size: xx-large;
+.box3{
+    transition: 1s;
+    border-radius: 10%;
+    width: 200px;
+    height: 20px;
+    float: left;
+}
+.box3:hover{
+    transition: 1s;
+}
+.box4{
+    transition: 1s;
+    border-radius: 10%;
+    width: 200px;
+    height: 20px;
+    float: left;
+}
+.box4:hover{
+    transition: 1s;
 }
