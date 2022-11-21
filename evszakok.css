@@ -21,3 +21,6 @@ p{
     transition: 1s;
     font-size: large;
 }
+img:hover + p {
+    font-size: xx-large;
+}
