@@ -22,5 +22,5 @@ p{
     font-size: large;
 }
 img:hover + p {
-    font-size: xx-large;
+    font-size: large;
 }
