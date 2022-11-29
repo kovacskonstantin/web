@@ -52,4 +52,6 @@ body{
 }
 footer{
   margin-top: auto;
+  background-color: crimson;
+  text-align: center;
 }
