@@ -39,14 +39,17 @@ div.nav li a:hover:not(.active) {
 div.nav li {
   float: left;
 }
-div.lablec{
-  position: fixed;
-  background-color: crimson;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+body {
+  min-height: 100vh;
 }
-div.content {
-  margin-left: 0;
+footer {
+  margin-top: 100px;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
 }
