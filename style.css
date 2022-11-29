@@ -39,3 +39,11 @@ div.nav li a:hover:not(.active) {
 div.nav li {
   float: left;
 }
+div.lablec{
+  position: fixed;
+  background-color: crimson;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
