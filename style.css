@@ -8,7 +8,7 @@ body {
  }
  
  h1 {
-   color: gold;
+   color:rgb(255, 255, 255)
  }
  
  .active {
@@ -42,9 +42,6 @@ div.nav li {
 body {
   min-height: 100vh;
 }
-footer {
-  margin-top: 100px;
-}
 body{
   min-height: 100vh;
   display: flex;
@@ -52,6 +49,5 @@ body{
 }
 footer{
   margin-top: auto;
-  background-color: crimson;
   text-align: center;
 }
