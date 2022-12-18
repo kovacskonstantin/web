@@ -1,66 +1,114 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Évszakok</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="evszakok.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Évszakok</title>
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/site.webmanifest">
+<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="evszakok.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color:cadetblue;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color:blueviolet;
+  border: 2px solid; 
+  border-color: blue;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.right {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  background-color:rgb(41, 41, 41);
+  font-style: italic;
+  color:white;
+  border-radius: 5%;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>
-    <div class="nav">
+<body style="font-family:Verdana;color:#aaaaaa;">
 
-        <ul>
-          <li><a href="https://kovacskonstantin.github.io/web/">Főoldal</a></li>
-          <li><a href="https://kovacskonstantin.github.io/web/keplink.html">Képlink</a></li>
-          <li><a href="https://kovacskonstantin.github.io/web/lista.html">Listák</a></li>
-          <li><a href="https://kovacskonstantin.github.io/web/tablazat.html">Órarend</a></li>
-          <li><a href="https://kovacskonstantin.github.io/web/urlap.html">Ürlap</a></li>
-          <li><a href="https://kovacskonstantin.github.io/web/videok.html">Videók</a></li>
-          <li><a class="active" href="https://kovacskonstantin.github.io/web/evszakok.html">Évszakok</a></li>
-        </ul>
-   
-    </div>
-    
-  <div class="evszak">
+<div style="background-color:coral;padding:15px;text-align:center;">
+  <h1>Kovács Konstantin</h1>
+</div>
 
-    <h1>Évszakok:</h1>
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="https://kovacskonstantin.github.io/web/">Főoldal</a>
+    <a href="https://kovacskonstantin.github.io/web/keplink.html">Képlink</a>
+    <a href="https://kovacskonstantin.github.io/web/lista.html">Listák</a>
+    <a href="https://kovacskonstantin.github.io/web/tablazat.html">Órarend</a>
+    <a href="https://kovacskonstantin.github.io/web/urlap.html">Ürlap</a>
+    <a href="https://kovacskonstantin.github.io/web/videok.html">Hangulatkeltő videók</a>
+    <a href="https://kovacskonstantin.github.io/web/evszakok.html">Évszakok</a>
+  </div>
 
-    <div class="kepek">
-        <img src="img/tavasz (1).jpg" alt="Tavasz">
+  <div class="main">
+    <div class="box1">
+      <img src="img/tavasz (1).jpg" alt="Tavasz">
         <p>Tavasz</p>
     </div>
-    <div class="kepek">
-        <img src="img/Nyár.jpg" alt="Nyár">
-        <p>Nyár</p>
+    <div class="box2">
+      <img src="img/Nyár.jpg" alt="Nyár">
+      <p>Nyár</p>
     </div>
-    <div class="kepek">
-        <img src="img/Ősz.jpg" alt="Ősz">
-        <p>Ősz</p>
+    <div class="box3">
+      <img src="img/Ősz.jpg" alt="Ősz">
+      <p>Ősz</p>
     </div>
-    <div class="kepek">
-        <img src="img/Tél.jpg" alt="Tél">
-        <p>Tél</p>
-
+    <div class="box4">
+      <img src="img/Tél.jpg" alt="Tél">
+      <p>Tél</p>
     </div>
- </div>
-    <footer>
-        <h1><p>Kovács Konstantin</p></h1>
-        <p><a href="https://m4sport.hu/">M4 sport</a></p>
-    </footer>
-
-
-    
-
-
-
+  </div>
+  <div class="right">
+    <h2>Rólam</h2>
+    <p>Itt a kollázsképem látható</p>
+    <img class="kep" src="img/kollazs.jpg" alt="A képen az én kollázs képem látható" title="kollazs" width="300">
+    <P>A nevem: Konstantin</P>
+    <br>
+    <p>A Miskolci Szc Kandó Kálmán Informatikai Technikumba tanulok.</p>
+  </div>
+</div>
+<footer>
+<div style="background-color:coral;text-align:center;padding:10px;margin-top:7px; color: blue;">© copyright KK</div>
+</footer>
 </body>
 </html>
