@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pitagorasz tétel</title>
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/site.webmanifest">
+<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="style.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color:cadetblue;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color:blueviolet;
+  border: 2px solid; 
+  border-color: blue;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.right {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  background-color:rgb(41, 41, 41);
+  font-style: italic;
+  color:white;
+  border-radius: 5%;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+legend{
+    color:crimson;
+}
+fieldset{
+    background-color:bisque;
+    border-radius: 5%;
+    border-color: black;
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:coral;padding:15px;text-align:center;">
+  <h1>Kovács Konstantin</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="https://kovacskonstantin.github.io/web/">Főoldal</a>
+    <a href="https://kovacskonstantin.github.io/web/keplink.html">Képlink</a>
+    <a href="https://kovacskonstantin.github.io/web/lista.html">Listák</a>
+    <a href="https://kovacskonstantin.github.io/web/tablazat.html">Órarend</a>
+    <a href="https://kovacskonstantin.github.io/web/urlap.html">Ürlap</a>
+    <a href="https://kovacskonstantin.github.io/web/videok.html">Hangulatkeltő videók</a>
+    <a href="https://kovacskonstantin.github.io/web/evszakok.html">Évszakok</a>
+    <a href="https://kovacskonstantin.github.io/web/szamologep.html">Számológép</a>
+    <a href="https://kovacskonstantin.github.io/web/pita.html">Pitagorasz</a>
+  </div>
+
+  <div class="main">
+   <img src="img/FI_511010902_szakiskola_9_NKP-116b.png" alt="derékszögű háromszög" title="derékszögű háromszög">
+   <br><br>
+   <fieldset>
+    <legend>Addj meg min. 2 számot</legend>
+   a oldal <input type="text" name="a" id="a" placeholder="cm" oninput="pita()"><br>
+   b oldal <input type="text" name="b" id="b" placeholder="cm" oninput="pita()"><br>
+   c oldal <input type="text" name="c" id="c" placeholder="cm" oninput="pita()"><br><br>
+   <input type="button" name="törles" value="Törlés" onclick="torles()">
+</fieldset>
+  </div>
+  <div class="right">
+    <h2>Rólam</h2>
+    <p>Itt a kollázsképem látható</p>
+    <img src="img/kollazs.jpg" alt="A képen az én kollázs képem látható" title="kollazs" width="300">
+    <P>A nevem: Konstantin</P>
+    <br>
+    <p>A Miskolci Szc Kandó Kálmán Informatikai Technikumba tanulok.</p>
+  </div>
+</div>
+<footer>
+<div style="background-color:coral;text-align:center;padding:10px;margin-top:7px; color: blue;">© copyright KK</div>
+</footer>
+
+<script>
+    function pita() {
+        if (a.value !=0 && b.value !=0) {
+            c.value = Math.sqrt((c.value*c.value)+(a.value*a.value));
+        }
+        else if(a.value !=0 && c.value !=0){
+            b.value = Math.sqrt((c.value*c.value)-(a.value*a.value));
+        }
+        else if (b.value !=0 && c.value !=0){
+            a.value = Math.sqrt((c.value*c.value)-(b.value*b.value));
+        }
+    }
+    function torles() {
+        a.value = "";
+        b.value = "";
+        c.value = "";
+        document.location.reload();
+    }
+</script>
+</body>
+</html>
