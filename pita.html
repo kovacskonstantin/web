@@ -70,6 +70,13 @@ fieldset{
     font-family: 'Lobster', cursive;
 
 }
+#haromszög {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 200px solid gold;
+}
 </style>
 </head>
 <body style="font-family:Verdana;color:#aaaaaa;">
@@ -100,7 +107,10 @@ fieldset{
    b oldal <input type="text" name="b" id="b" placeholder="cm" oninput="pita()"><br>
    c oldal <input type="text" name="c" id="c" placeholder="cm" oninput="pita()"><br><br>
    <input type="button" name="törles" value="Törlés" onclick="torles()">
-</fieldset>
+   </fieldset>
+   <br><br>
+   <h2>Az oldalak nagysága szerinti háromszög:</h2>
+    <div id="haromszög"></div>
   </div>
   <div class="right">
     <h2>Rólam</h2>
@@ -126,6 +136,11 @@ fieldset{
         else if (b.value !=0 && c.value !=0){
             a.value = Math.sqrt((c.value*c.value)-(b.value*b.value));
         }
+        const triangle = document.getElementById("haromszög");
+            triangle.style = "border-left:" + 0 + "px solid transparent;" +
+                "border-right:" + b.value * 20 + "px solid transparent;" +
+                "border-bottom:" + a.value * 20 + "px solid green;";
+
     }
     function torles() {
         a.value = "";
